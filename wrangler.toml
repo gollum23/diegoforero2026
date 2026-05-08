@@ -4,9 +4,8 @@ name = "diegoforero2026"
 compatibility_date = "2026-05-08"
 main = "./worker/index.ts"
 
-[observability.logs]
+[observability]
 enabled = true
-invocation_logs = true
 
 [assets]
 not_found_handling = "single-page-application"
