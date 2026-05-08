@@ -1,5 +1,5 @@
 "$schema" = "./node_modules/wrangler/config-schema.json"
-name = "diegoforero"
+name = "diegoforero2026"
 # Set this to today's date
 compatibility_date = "2026-05-08"
 main = "./worker/index.ts"
