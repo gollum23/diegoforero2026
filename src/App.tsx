@@ -1,17 +1,21 @@
+import avatar from './assets/avatar.jpg'
+
 function App() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-neutral-950 px-4 py-10 relative overflow-hidden">
       {/* Subtle radial accent glow behind the card */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(100,108,255,0.18),transparent_60%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(59,130,246,0.18),transparent_60%)]"
       />
 
-      <article className="relative w-full max-w-md rounded-2xl border border-white/10 bg-white/3 p-6 sm:p-10 shadow-[0_0_60px_-20px_rgba(100,108,255,0.35)] backdrop-blur-sm">
+      <article className="relative w-full max-w-md rounded-2xl border border-white/10 bg-white/3 p-6 sm:p-10 shadow-[0_0_60px_-20px_rgba(59,130,246,0.35)] backdrop-blur-sm">
         {/* Avatar */}
-        <div className="mx-auto flex h-20 w-20 sm:h-24 sm:w-24 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-indigo-500/30 to-fuchsia-500/20 text-2xl sm:text-3xl font-semibold tracking-wide text-white">
-          DF
-        </div>
+        <img
+          src={avatar}
+          alt="Diego Forero"
+          className="mx-auto h-20 w-20 sm:h-24 sm:w-24 rounded-full border border-white/10 object-cover"
+        />
 
         {/* Header */}
         <header className="mt-6 text-center">
@@ -26,19 +30,19 @@ function App() {
         {/* Bio */}
         <p className="mt-6 text-center text-sm sm:text-base leading-relaxed text-neutral-300">
           Software engineer who enjoys building thoughtful, performant web
-          experiences. Currently exploring the edges of React, TypeScript, and
-          the Cloudflare stack.
+          applications. I like learning new things and I am always looking
+          for new challenges.
         </p>
 
         {/* Social links */}
         <ul className="mt-8 flex items-center justify-center gap-3">
           <li>
             <a
-              href="https://github.com"
+              href="https://github.com/gollum23"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex h-11 w-11 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 text-neutral-300 transition hover:border-indigo-400/60 hover:text-indigo-300 hover:bg-white/5"
+              className="flex h-11 w-11 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 text-neutral-300 transition hover:border-blue-400/60 hover:text-blue-300 hover:bg-white/5"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -52,11 +56,11 @@ function App() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/diego-alexander-forero/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex h-11 w-11 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 text-neutral-300 transition hover:border-indigo-400/60 hover:text-indigo-300 hover:bg-white/5"
+              className="flex h-11 w-11 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 text-neutral-300 transition hover:border-blue-400/60 hover:text-blue-300 hover:bg-white/5"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -70,11 +74,11 @@ function App() {
           </li>
           <li>
             <a
-              href="https://x.com"
+              href="https://x.com/gollum23"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
-              className="flex h-11 w-11 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 text-neutral-300 transition hover:border-indigo-400/60 hover:text-indigo-300 hover:bg-white/5"
+              className="flex h-11 w-11 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 text-neutral-300 transition hover:border-blue-400/60 hover:text-blue-300 hover:bg-white/5"
             >
               <svg
                 viewBox="0 0 24 24"
